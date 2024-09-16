@@ -8,5 +8,5 @@ Cut images within a stylesheet image into pieces of a specified size.
 ## Usage
 
 ```console
-$ python ./main.py 32x32 ./image.png output_folder
+$ python ./main.py WxH ./image.png output_folder
 ```
