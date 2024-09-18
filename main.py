@@ -23,10 +23,10 @@ def split_image(image_path, output_dir, width, height):
             bottom = min(top + height, img_height)
             box = (left, top, right, bottom)
             cropped_img = img.crop(box)
-            cropped_img.save(os.path.join(output_dir, f"img_{count}.png"))
+            cropped_img.save(os.path.join(output_dir, f"{count}.png"))
             count += 1
 
-    print(f"Cutting complete. {count} images have been saved in the folder '{output_dir}'.")
+    print(f"{count} images have been saved in the folder '{output_dir}'.")
 
 def main():
     parser = argparse.ArgumentParser(description="Cut images within a stylesheet image into pieces of a specified size.")
